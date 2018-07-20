@@ -152,6 +152,79 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Python_02" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/20/Python_02/">Python基础2——运算和运算符</a>
+    </h1>
+  
+
+        
+        <a href="/2018/07/20/Python_02/" class="archive-article-date">
+  	<time datetime="2018-07-20T11:44:29.396Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-20</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><h3 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h3><p>&#43;   &#45;  &#42;   &#47;  %（取模）  **（求幂）  //（取整)</p>
+<h3 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h3><p>==   !=  &lt;&gt;  &gt;   &lt;    &gt;=   &lt;= </p>
+<h3 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h3><p>=  +=  -=  *=  /=  %=  **=  //=</p>
+<h3 id="位运算符"><a href="#位运算符" class="headerlink" title="位运算符"></a>位运算符</h3><p>&amp;(按位与运算符)   |(按位或运算符)   ^(按位异或运算符)<br>~(按位取反运算符)  &lt;&lt;(左移动运算符)  &gt;&gt;(右移动运算符)</p>
+<h3 id="逻辑与-and"><a href="#逻辑与-and" class="headerlink" title="逻辑与  and"></a>逻辑与  and</h3><p>逻辑与运算表达式：表达式1 and 表达式2<br>【有一个为假就为假】</p>
+<h3 id="逻辑或-or"><a href="#逻辑或-or" class="headerlink" title="逻辑或  or"></a>逻辑或  or</h3><p>逻辑或运算表达式：表达式1  or  表达式2<br>【有一个为真就为真】</p>
+<h3 id="逻辑非：-not"><a href="#逻辑非：-not" class="headerlink" title="逻辑非： not"></a>逻辑非： not</h3><p>逻辑非运算表达式： not 表达式</p>
+<h3 id="成员运算符"><a href="#成员运算符" class="headerlink" title="成员运算符"></a>成员运算符</h3><p>in：如果在指定的序列中找到值返回True，否则返回False<br>not in：如果在指定的序列中没有找到值返回True，否则返回False</p>
+<h3 id="身份运算符"><a href="#身份运算符" class="headerlink" title="身份运算符"></a>身份运算符</h3><p>is：判断两个标识符是不是引用同一个对象<br>is not：判断两个标识符是不是引用不同一个对象</p>
+<h2 id="获取变量类型-type（）"><a href="#获取变量类型-type（）" class="headerlink" title="获取变量类型  type（）"></a>获取变量类型  type（）</h2><p>isinstance() 函数来判断一个对象是否是一个已知的类型<br>语法：isinstance(object, classinfo)   判断object是否是classinfo类型，是的话返回True，否的话返回False<br>    object – 实例对象。<br>    classinfo – 可以是直接或间接类名、基本类型或者由它们组成的元组<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">list1=[<span class="string">'hello'</span>,100,45,78,10,[<span class="string">'one'</span>,<span class="string">'two'</span>]]</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> list1:</span><br><span class="line">    <span class="keyword">if</span> isinstance(i,int):</span><br><span class="line">        <span class="keyword">if</span> i%2==0:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'%d是一个偶数'</span>%i)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'%d是一个奇数'</span>%i)</span><br></pre></td></tr></table></figure></p>
+<h2 id="导入库"><a href="#导入库" class="headerlink" title="导入库"></a>导入库</h2><p>库：封装一些功能<br>math：数学相关的库<br>random: 随机数<br>import math<br>import random<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#向上取整</span></span><br><span class="line"><span class="built_in">print</span>(math.ceil(18.1))  <span class="comment">#19</span></span><br><span class="line"><span class="built_in">print</span>(math.ceil(18.9))  <span class="comment">#19</span></span><br><span class="line"><span class="comment">#向下取整</span></span><br><span class="line"><span class="built_in">print</span>(math.floor(18.1))  <span class="comment">#18</span></span><br><span class="line"><span class="built_in">print</span>(math.floor(18.9))  <span class="comment">#18</span></span><br><span class="line"><span class="comment">#随机生成【0，1）之间的数（浮点数）</span></span><br><span class="line"><span class="built_in">print</span>(random.random())</span><br><span class="line"><span class="comment">#从0-99选取一个随机数</span></span><br><span class="line"><span class="built_in">print</span>(random.randrange(100))</span><br><span class="line"><span class="comment">#19-180的随机数</span></span><br><span class="line">import random</span><br><span class="line"><span class="built_in">print</span>(random.randrange(19,180))</span><br><span class="line"><span class="comment">#输出1-10的和</span></span><br><span class="line">sum = 0</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(1,11):</span><br><span class="line">    sum += i</span><br><span class="line">    <span class="keyword">if</span>  i == 10:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">"10 = "</span>,end = <span class="string">""</span>)</span><br><span class="line">        <span class="built_in">break</span></span><br><span class="line">    <span class="built_in">print</span>(i, end = <span class="string">" + "</span>)</span><br><span class="line"><span class="built_in">print</span>(sum)</span><br><span class="line"><span class="comment">#  1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 = 55</span></span><br></pre></td></tr></table></figure></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/07/20/Python_02/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Python_01" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -191,7 +264,7 @@
 <h3 id="布尔值"><a href="#布尔值" class="headerlink" title="布尔值"></a>布尔值</h3><p>布尔值：Ture和False<br>转为整数，True自动转为1，False转为0<br>转为浮点数，True自动转为1.0，False转为0.0<br>转为False的情况有：<br>整形 0<br>浮点型 0.0<br>复数 0+0j<br>布尔值 false<br>字符串 ‘’空字符串<br>列表  []空列表<br>元组  ()空元组 (0)<br>字典  {}空字典<br>集合  set()空集合<br>转为False的情况是有限的，除了False的情况，其他都为True</p>
 <h3 id="字符串型-强制转换"><a href="#字符串型-强制转换" class="headerlink" title="字符串型-强制转换"></a>字符串型-强制转换</h3><p>str(x)将对象 x 转换为字符串<br>repr(x)将对象 x 转换为表达式字符串(原样输出)</p>
 <h3 id="字符串、列表、元组、字典、集合-强制转换"><a href="#字符串、列表、元组、字典、集合-强制转换" class="headerlink" title="字符串、列表、元组、字典、集合-强制转换"></a>字符串、列表、元组、字典、集合-强制转换</h3><p>转换具体操作<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#字典转换为集合</span></span><br><span class="line">set1 = <span class="built_in">set</span>(dict1)</span><br><span class="line"><span class="built_in">print</span>(set1)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(set1))</span><br><span class="line"></span><br><span class="line"><span class="comment">#字典转换为元组</span></span><br><span class="line">tuple1 = tuple(dict1)</span><br><span class="line"><span class="built_in">print</span>(tuple1)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(tuple1))</span><br><span class="line"></span><br><span class="line"><span class="comment">#将字典转换为字符串</span></span><br><span class="line">str1 = str(dict1)</span><br><span class="line"><span class="built_in">print</span>(str1)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(str1))</span><br><span class="line"></span><br><span class="line"><span class="comment">#元组转换为字典</span></span><br><span class="line">tuple1 = ([<span class="string">'uname'</span>,<span class="string">'张三'</span>],[<span class="string">'age'</span>,45],[<span class="string">'class'</span>,<span class="string">'python'</span>])</span><br><span class="line">dict1 = dict(tuple1)</span><br><span class="line"><span class="built_in">print</span>(dict1)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(dict1))</span><br><span class="line"></span><br><span class="line"><span class="comment">#列表转换为字典</span></span><br><span class="line">list1 = [[<span class="string">'uname'</span>,<span class="string">'张三'</span>],[<span class="string">'age'</span>,45],[<span class="string">'class'</span>,<span class="string">'python'</span>]]</span><br><span class="line">dict1 = dict(list1)</span><br><span class="line"><span class="built_in">print</span>(dict1)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(dict1))</span><br><span class="line"></span><br><span class="line"><span class="comment">#将列表转为集合</span></span><br><span class="line">list1 = [<span class="string">"uname"</span>, <span class="string">"age"</span>, <span class="string">"class"</span>]</span><br><span class="line">set1 = <span class="built_in">set</span>(list1)</span><br><span class="line"><span class="built_in">print</span>(set1)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(<span class="built_in">set</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment">#将列表转换为字符串</span></span><br><span class="line">list1 = [<span class="string">"uname"</span>, <span class="string">"age"</span>, <span class="string">"class"</span>]</span><br><span class="line">str1 = str(list1)</span><br><span class="line"><span class="built_in">print</span>(str1)</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(str1))</span><br></pre></td></tr></table></figure></p>
-<h2 id="作业"><a href="#作业" class="headerlink" title="作业"></a>作业</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#1、从当前列表中a = list((1,2,3,4,5,6,7,8,9,10,11,12,13,14)) 获取9-12的值</span></span><br><span class="line">a = list((1,2,3,4,5,6,7,8,9,10,11,12,13,14))</span><br><span class="line"><span class="built_in">print</span>(a[8:12])</span><br><span class="line"></span><br><span class="line"><span class="comment">#2、选择适当的格式存储学生的相关信息:姓名，年龄，性别，专业，院校，联系方式，籍贯等内容</span></span><br><span class="line">dictXinxi = &#123;<span class="string">"姓名"</span>:<span class="string">"王"</span>, <span class="string">"年龄"</span>:<span class="string">"22"</span>, <span class="string">"性别"</span>:<span class="string">"男"</span>, <span class="string">"专业"</span>:<span class="string">"软件工程"</span>, <span class="string">"院校"</span>:<span class="string">"黄河科技学院"</span>, <span class="string">"联系方式"</span>:<span class="string">"13283716683"</span>&#125;</span><br><span class="line"><span class="built_in">print</span>(dictXinxi)</span><br><span class="line"><span class="built_in">print</span>(dictXinxi[<span class="string">"姓名"</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment"># 3、以下哪个命名不合法</span></span><br><span class="line"><span class="comment"># MyGod5(合法)、_MyGod_(不合法)、MyGod(合法)、5MyGod(不合法)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#扩展：参考手册，查找相关函数，能不能生成指定的数字</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(5,8):  <span class="comment">#输出5，6，7</span></span><br><span class="line">    <span class="built_in">print</span>(i)</span><br><span class="line"></span><br><span class="line"><span class="comment">#描述两个变量值的关系：</span></span><br><span class="line">num1 = 123456</span><br><span class="line">num2 = num1</span><br><span class="line"><span class="built_in">print</span>(num1)</span><br><span class="line"><span class="built_in">print</span>(id(num1))</span><br><span class="line"><span class="built_in">print</span>(num2)</span><br><span class="line"><span class="built_in">print</span>(id(num2))</span><br><span class="line"><span class="comment">#num1和num2数值相同，地址也相同</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#简答：python总为什么使用缩进呢？</span></span><br><span class="line"><span class="comment">#缩进是用来界定代码块的，相当于其他编程语言里的大括号</span></span><br></pre></td></tr></table></figure>
+<h2 id="作业"><a href="#作业" class="headerlink" title="作业"></a>作业</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#简答：python总为什么使用缩进呢？</span></span><br><span class="line"><span class="comment">#缩进是用来界定代码块的，相当于其他编程语言里的大括号</span></span><br></pre></td></tr></table></figure>
 
       
 
