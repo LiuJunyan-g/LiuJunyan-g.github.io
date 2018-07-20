@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Python基础2——运算和运算符 | 好好学习，天天向上</title>
+  <title>Python基础4——高级特性 | 好好学习，天天向上</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="运算符算术运算符&amp;#43;   &amp;#45;  &amp;#42;   &amp;#47;  %（取模）  **（求幂）  //（取整) 比较运算符==   !=  &amp;lt;&amp;gt;  &amp;gt;   &amp;lt;    &amp;gt;=   &amp;lt;=  赋值运算符=  +=  -=  *=  /=  %=  **=  //= 位运算符&amp;amp;(按位与运算符)   |(按位或运算符)   ^(按位异或运算符)~(按位取反运">
+  <meta name="description" content="列表生成式Python 的内置函数range() 函数可创建一个整数序列，一般和 for 循环连用语法格式： range(start,end[,step])。start：起始下标（可选）。默认为0，例如range(5)等价于range(0，5)等价于[0,1,2,3,4]。end：终止下标。例如range(0,5)等价于[0,1,2,3,4]，注意不包括终止下标5。step：步长（可选）。默认为1">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python基础2——运算和运算符">
-<meta property="og:url" content="http://yoursite.com/2018/07/20/Python_02/index.html">
+<meta property="og:title" content="Python基础4——高级特性">
+<meta property="og:url" content="http://yoursite.com/2018/07/19/Python_05/index.html">
 <meta property="og:site_name" content="好好学习，天天向上">
-<meta property="og:description" content="运算符算术运算符&amp;#43;   &amp;#45;  &amp;#42;   &amp;#47;  %（取模）  **（求幂）  //（取整) 比较运算符==   !=  &amp;lt;&amp;gt;  &amp;gt;   &amp;lt;    &amp;gt;=   &amp;lt;=  赋值运算符=  +=  -=  *=  /=  %=  **=  //= 位运算符&amp;amp;(按位与运算符)   |(按位或运算符)   ^(按位异或运算符)~(按位取反运">
+<meta property="og:description" content="列表生成式Python 的内置函数range() 函数可创建一个整数序列，一般和 for 循环连用语法格式： range(start,end[,step])。start：起始下标（可选）。默认为0，例如range(5)等价于range(0，5)等价于[0,1,2,3,4]。end：终止下标。例如range(0,5)等价于[0,1,2,3,4]，注意不包括终止下标5。step：步长（可选）。默认为1">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-16T06:22:27.500Z">
+<meta property="og:updated_time" content="2018-07-16T06:22:24.028Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Python基础2——运算和运算符">
-<meta name="twitter:description" content="运算符算术运算符&amp;#43;   &amp;#45;  &amp;#42;   &amp;#47;  %（取模）  **（求幂）  //（取整) 比较运算符==   !=  &amp;lt;&amp;gt;  &amp;gt;   &amp;lt;    &amp;gt;=   &amp;lt;=  赋值运算符=  +=  -=  *=  /=  %=  **=  //= 位运算符&amp;amp;(按位与运算符)   |(按位或运算符)   ^(按位异或运算符)~(按位取反运">
+<meta name="twitter:title" content="Python基础4——高级特性">
+<meta name="twitter:description" content="列表生成式Python 的内置函数range() 函数可创建一个整数序列，一般和 for 循环连用语法格式： range(start,end[,step])。start：起始下标（可选）。默认为0，例如range(5)等价于range(0，5)等价于[0,1,2,3,4]。end：终止下标。例如range(0,5)等价于[0,1,2,3,4]，注意不包括终止下标5。step：步长（可选）。默认为1">
   
     <link rel="alternative" href="/atom.xml" title="好好学习，天天向上" type="application/atom+xml">
   
@@ -154,37 +154,34 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Python_02" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Python_05" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Python基础2——运算和运算符
+      Python基础4——高级特性
     </h1>
   
 
         
-        <a href="/2018/07/20/Python_02/" class="archive-article-date">
-  	<time datetime="2018-07-20T11:44:29.396Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-20</time>
+        <a href="/2018/07/19/Python_05/" class="archive-article-date">
+  	<time datetime="2018-07-19T09:28:12.017Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-19</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><h3 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h3><p>&#43;   &#45;  &#42;   &#47;  %（取模）  **（求幂）  //（取整)</p>
-<h3 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h3><p>==   !=  &lt;&gt;  &gt;   &lt;    &gt;=   &lt;= </p>
-<h3 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h3><p>=  +=  -=  *=  /=  %=  **=  //=</p>
-<h3 id="位运算符"><a href="#位运算符" class="headerlink" title="位运算符"></a>位运算符</h3><p>&amp;(按位与运算符)   |(按位或运算符)   ^(按位异或运算符)<br>~(按位取反运算符)  &lt;&lt;(左移动运算符)  &gt;&gt;(右移动运算符)</p>
-<h3 id="逻辑与-and"><a href="#逻辑与-and" class="headerlink" title="逻辑与  and"></a>逻辑与  and</h3><p>逻辑与运算表达式：表达式1 and 表达式2<br>【有一个为假就为假】</p>
-<h3 id="逻辑或-or"><a href="#逻辑或-or" class="headerlink" title="逻辑或  or"></a>逻辑或  or</h3><p>逻辑或运算表达式：表达式1  or  表达式2<br>【有一个为真就为真】</p>
-<h3 id="逻辑非：-not"><a href="#逻辑非：-not" class="headerlink" title="逻辑非： not"></a>逻辑非： not</h3><p>逻辑非运算表达式： not 表达式</p>
-<h3 id="成员运算符"><a href="#成员运算符" class="headerlink" title="成员运算符"></a>成员运算符</h3><p>in：如果在指定的序列中找到值返回True，否则返回False<br>not in：如果在指定的序列中没有找到值返回True，否则返回False</p>
-<h3 id="身份运算符"><a href="#身份运算符" class="headerlink" title="身份运算符"></a>身份运算符</h3><p>is：判断两个标识符是不是引用同一个对象<br>is not：判断两个标识符是不是引用不同一个对象</p>
-<h2 id="获取变量类型-type（）"><a href="#获取变量类型-type（）" class="headerlink" title="获取变量类型  type（）"></a>获取变量类型  type（）</h2><p>isinstance() 函数来判断一个对象是否是一个已知的类型<br>语法：isinstance(object, classinfo)   判断object是否是classinfo类型，是的话返回True，否的话返回False<br>    object – 实例对象。<br>    classinfo – 可以是直接或间接类名、基本类型或者由它们组成的元组<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">list1=[<span class="string">'hello'</span>,100,45,78,10,[<span class="string">'one'</span>,<span class="string">'two'</span>]]</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> list1:</span><br><span class="line">    <span class="keyword">if</span> isinstance(i,int):</span><br><span class="line">        <span class="keyword">if</span> i%2==0:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'%d是一个偶数'</span>%i)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">'%d是一个奇数'</span>%i)</span><br></pre></td></tr></table></figure></p>
-<h2 id="导入库"><a href="#导入库" class="headerlink" title="导入库"></a>导入库</h2><p>库：封装一些功能<br>math：数学相关的库<br>random: 随机数<br>import math<br>import random<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#向上取整</span></span><br><span class="line"><span class="built_in">print</span>(math.ceil(18.1))  <span class="comment">#19</span></span><br><span class="line"><span class="built_in">print</span>(math.ceil(18.9))  <span class="comment">#19</span></span><br><span class="line"><span class="comment">#向下取整</span></span><br><span class="line"><span class="built_in">print</span>(math.floor(18.1))  <span class="comment">#18</span></span><br><span class="line"><span class="built_in">print</span>(math.floor(18.9))  <span class="comment">#18</span></span><br><span class="line"><span class="comment">#随机生成【0，1）之间的数（浮点数）</span></span><br><span class="line"><span class="built_in">print</span>(random.random())</span><br><span class="line"><span class="comment">#从0-99选取一个随机数</span></span><br><span class="line"><span class="built_in">print</span>(random.randrange(100))</span><br><span class="line"><span class="comment">#19-180的随机数</span></span><br><span class="line">import random</span><br><span class="line"><span class="built_in">print</span>(random.randrange(19,180))</span><br><span class="line"><span class="comment">#输出1-10的和</span></span><br><span class="line">sum = 0</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(1,11):</span><br><span class="line">    sum += i</span><br><span class="line">    <span class="keyword">if</span>  i == 10:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">"10 = "</span>,end = <span class="string">""</span>)</span><br><span class="line">        <span class="built_in">break</span></span><br><span class="line">    <span class="built_in">print</span>(i, end = <span class="string">" + "</span>)</span><br><span class="line"><span class="built_in">print</span>(sum)</span><br><span class="line"><span class="comment">#  1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 = 55</span></span><br></pre></td></tr></table></figure></p>
+        <h2 id="列表生成式"><a href="#列表生成式" class="headerlink" title="列表生成式"></a>列表生成式</h2><p>Python 的内置函数range() 函数可创建一个整数序列，一般和 for 循环连用<br>语法格式： range(start,end[,step])。<br>start：起始下标（可选）。默认为0，例如range(5)等价于range(0，5)等价于[0,1,2,3,4]。<br>end：终止下标。例如range(0,5)等价于[0,1,2,3,4]，注意不包括终止下标5。<br>step：步长（可选）。默认为1<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</span></span><br><span class="line"><span class="built_in">print</span>(list(range(1, 11)))</span><br><span class="line"><span class="comment">#[1×1, 2×2, 3×3,…, 10×10]</span></span><br><span class="line">list1 = []</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(1,11):</span><br><span class="line">    list1.append(i*i)</span><br><span class="line"><span class="built_in">print</span>(list1)</span><br></pre></td></tr></table></figure></p>
+<p>利用列表生成式可以用一行语句代替循环生成上面的list<br>[代码段 for 变量 in 对象  代码]<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>([i <span class="keyword">for</span> i <span class="keyword">in</span> range(1,11)])</span><br><span class="line"><span class="built_in">print</span>([i*i <span class="keyword">for</span> i <span class="keyword">in</span> range(1,11)])</span><br></pre></td></tr></table></figure></p>
+<p>两层循环的列表生成式<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>([m + n <span class="keyword">for</span> m <span class="keyword">in</span> <span class="string">'ABC'</span> <span class="keyword">for</span> n <span class="keyword">in</span> <span class="string">'XYZ'</span>])</span><br><span class="line"><span class="comment">#['AX', 'AY', 'AZ', 'BX', 'BY', 'BZ', 'CX', 'CY', 'CZ']</span></span><br></pre></td></tr></table></figure></p>
+<p>内置函数range()可以生成一个有规律的数字序列，我们可以通过列表表达式很方便的生成一个列表（可以是数字列表，字符串列表等）。<br>Python最大的优势和特点就在于它的简洁性，能用最短的代码实现更多的功能。</p>
+<h2 id="切片"><a href="#切片" class="headerlink" title="切片"></a>切片</h2><p>Python提供切片（Slice）操作符来截取指定索引范围的序列（列表/元组），可以很方便地获取序列的子序列。<br>    L[a:b]表示从索引a开始取，直到索引b为止，但不包括索引b。<br>    支持倒数切片。L[-1]取倒数第一个元素。<br>    切片可用于：str、list、tuple，set。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">list1 = [1, 2, 3, 4, 5, 6, 7, 8]</span><br><span class="line"><span class="built_in">print</span>(list1[::-1])    <span class="comment">#[8, 7, 6, 5, 4, 3, 2, 1]</span></span><br><span class="line"><span class="built_in">print</span>(list1[1:5])     <span class="comment">#[2, 3, 4, 5]  </span></span><br><span class="line"><span class="built_in">print</span>(list1[:])       <span class="comment">#[1, 2, 3, 4, 5, 6, 7, 8]</span></span><br><span class="line"><span class="built_in">print</span>(list1[::2])     <span class="comment">#[1, 3, 5, 7]</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h2><h3 id="迭代器—判断一个对象是否可迭代"><a href="#迭代器—判断一个对象是否可迭代" class="headerlink" title="迭代器—判断一个对象是否可迭代"></a>迭代器—判断一个对象是否可迭代</h3><p>Python迭代器（Iterator）可以记住遍历的位置的对象，从第一个元素开始访问，然后依次访问直到所有的元素都被遍历。<br>迭代器只能往前不会后退，有两个基本方法：iter()和next()。<br>iter()用来创建迭代器，next()用来访问迭代器的下一个元素。<br>字符串、列表或元组对象都能用来创建迭代器，同时也支持for循环遍历。<br>对于一个对象，通常是通过collections模块的Iterable类型判断该对象是否是一个可迭代的对象，如：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">from collections import Iterable</span><br><span class="line"><span class="built_in">print</span>(isinstance(<span class="string">'abc'</span>, Iterable))		<span class="comment"># str是否可迭代</span></span><br><span class="line"><span class="comment">#True</span></span><br><span class="line"><span class="built_in">print</span>(isinstance([1,2,3], Iterable))	<span class="comment"># list是否可迭代</span></span><br><span class="line"><span class="comment">#True</span></span><br><span class="line"><span class="built_in">print</span>(isinstance(123, Iterable))	<span class="comment"># 整数是否可迭代</span></span><br><span class="line"><span class="comment">#False</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="迭代器—列表实现下标循环"><a href="#迭代器—列表实现下标循环" class="headerlink" title="迭代器—列表实现下标循环"></a>迭代器—列表实现下标循环</h3><p>enumerate() 函数用于将一个可遍历的数据对象(如列表、元组或字符串)组合为一个索引序列，同时列出数据和数据下标，一般用在 for 循环当中。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">list1 = [1, 2, 3]</span><br><span class="line"><span class="keyword">for</span> i, j <span class="keyword">in</span> enumerate(list1):</span><br><span class="line">    <span class="built_in">print</span>(i, j)</span><br><span class="line"><span class="comment">#0 1</span></span><br><span class="line"><span class="comment">#1 2</span></span><br><span class="line"><span class="comment">#2 3</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="生成器"><a href="#生成器" class="headerlink" title="生成器"></a>生成器</h3><p>生成器（generator）：生成器是一次生成一个值的特殊类型函数<br>当列表元素很多，而列表后续元素可以通过某种算法推导出来，我们就不用存储完整的列表，从而节省大量的空间。生成器可以利用for循环访问，也可以利用next()来一次访问元素。<br>创建生成器的两种方法：<br>    把一个列表生成式的[]改成()<br>    在函数代码中添加yield关键字<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">a = (i <span class="keyword">for</span> i <span class="keyword">in</span> range(5))</span><br><span class="line"><span class="built_in">print</span>(next(a))   <span class="comment">#0</span></span><br><span class="line"><span class="built_in">print</span>(next(a))	 <span class="comment">#1</span></span><br><span class="line"><span class="comment">#斐波那契额数列</span></span><br><span class="line">def fib(max):</span><br><span class="line">    n, a, b = 0, 0, 1</span><br><span class="line">    <span class="keyword">while</span> n &lt; max:</span><br><span class="line">        yield b</span><br><span class="line">        a, b = b, a + b</span><br><span class="line">        n = n + 1</span><br><span class="line">    <span class="built_in">return</span> <span class="keyword">done</span></span><br><span class="line">f = fib(5)</span><br><span class="line"><span class="built_in">print</span>(next(f))	<span class="comment">#1</span></span><br><span class="line"><span class="built_in">print</span>(next(f))	<span class="comment">#1</span></span><br><span class="line"><span class="built_in">print</span>(next(f))	<span class="comment">#2</span></span><br><span class="line"><span class="built_in">print</span>(next(f))	<span class="comment">#3</span></span><br><span class="line"><span class="built_in">print</span>(next(f))	<span class="comment">#5</span></span><br></pre></td></tr></table></figure></p>
 
       
 
@@ -264,7 +261,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/20/Python_02/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/19/Python_05/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -278,18 +275,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/07/20/Python_03/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2018/07/19/Python_06/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          Python基础3————数据类型的转换
+          Python基础5——字符串操作
         
       </div>
     </a>
   
   
-    <a href="/2018/07/20/Python_01/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Python基础1——数据类型</div>
+    <a href="/2018/07/19/Python_04/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Python基础3——控制语句</div>
       <i class="icon-circle-right"></i>
     </a>
   
