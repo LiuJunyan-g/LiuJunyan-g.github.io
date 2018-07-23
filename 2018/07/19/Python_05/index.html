@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Python基础5——高级特性 | 好好学习，天天向上</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="列表生成式Python 的内置函数range() 函数可创建一个整数序列，一般和 for 循环连用语法格式： range(start,end[,step])。start：起始下标（可选）。默认为0，例如range(5)等价于range(0，5)等价于[0,1,2,3,4]。end：终止下标。例如range(0,5)等价于[0,1,2,3,4]，注意不包括终止下标5。step：步长（可选）。默认为1">
+  <meta name="description" content="迭代器，生成器，斐波那契额数列。">
 <meta name="keywords" content="hello">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python基础5——高级特性">
 <meta property="og:url" content="http://yoursite.com/2018/07/19/Python_05/index.html">
 <meta property="og:site_name" content="好好学习，天天向上">
-<meta property="og:description" content="列表生成式Python 的内置函数range() 函数可创建一个整数序列，一般和 for 循环连用语法格式： range(start,end[,step])。start：起始下标（可选）。默认为0，例如range(5)等价于range(0，5)等价于[0,1,2,3,4]。end：终止下标。例如range(0,5)等价于[0,1,2,3,4]，注意不包括终止下标5。step：步长（可选）。默认为1">
+<meta property="og:description" content="迭代器，生成器，斐波那契额数列。">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-23T08:30:53.750Z">
+<meta property="og:updated_time" content="2018-07-23T09:14:28.202Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python基础5——高级特性">
-<meta name="twitter:description" content="列表生成式Python 的内置函数range() 函数可创建一个整数序列，一般和 for 循环连用语法格式： range(start,end[,step])。start：起始下标（可选）。默认为0，例如range(5)等价于range(0，5)等价于[0,1,2,3,4]。end：终止下标。例如range(0,5)等价于[0,1,2,3,4]，注意不包括终止下标5。step：步长（可选）。默认为1">
+<meta name="twitter:description" content="迭代器，生成器，斐波那契额数列。">
   
     <link rel="alternative" href="/atom.xml" title="好好学习，天天向上" type="application/atom+xml">
   
@@ -175,7 +175,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="列表生成式"><a href="#列表生成式" class="headerlink" title="列表生成式"></a>列表生成式</h2><p>Python 的内置函数range() 函数可创建一个整数序列，一般和 for 循环连用<br>语法格式： range(start,end[,step])。<br>start：起始下标（可选）。默认为0，例如range(5)等价于range(0，5)等价于[0,1,2,3,4]。<br>end：终止下标。例如range(0,5)等价于[0,1,2,3,4]，注意不包括终止下标5。<br>step：步长（可选）。默认为1<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</span></span><br><span class="line"><span class="built_in">print</span>(list(range(1, 11)))</span><br><span class="line"><span class="comment">#[1×1, 2×2, 3×3,…, 10×10]</span></span><br><span class="line">list1 = []</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(1,11):</span><br><span class="line">    list1.append(i*i)</span><br><span class="line"><span class="built_in">print</span>(list1)</span><br></pre></td></tr></table></figure></p>
+        <h2 id="迭代器，生成器，斐波那契额数列。"><a href="#迭代器，生成器，斐波那契额数列。" class="headerlink" title="迭代器，生成器，斐波那契额数列。"></a>迭代器，生成器，斐波那契额数列。</h2><a id="more"></a>
+<p>这里更多的内容</p>
+<h2 id="列表生成式"><a href="#列表生成式" class="headerlink" title="列表生成式"></a>列表生成式</h2><p>Python 的内置函数range() 函数可创建一个整数序列，一般和 for 循环连用<br>语法格式： range(start,end[,step])。<br>start：起始下标（可选）。默认为0，例如range(5)等价于range(0，5)等价于[0,1,2,3,4]。<br>end：终止下标。例如range(0,5)等价于[0,1,2,3,4]，注意不包括终止下标5。<br>step：步长（可选）。默认为1<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</span></span><br><span class="line"><span class="built_in">print</span>(list(range(1, 11)))</span><br><span class="line"><span class="comment">#[1×1, 2×2, 3×3,…, 10×10]</span></span><br><span class="line">list1 = []</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(1,11):</span><br><span class="line">    list1.append(i*i)</span><br><span class="line"><span class="built_in">print</span>(list1)</span><br></pre></td></tr></table></figure></p>
 <p>利用列表生成式可以用一行语句代替循环生成上面的list<br>[代码段 for 变量 in 对象  代码]<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>([i <span class="keyword">for</span> i <span class="keyword">in</span> range(1,11)])</span><br><span class="line"><span class="built_in">print</span>([i*i <span class="keyword">for</span> i <span class="keyword">in</span> range(1,11)])</span><br></pre></td></tr></table></figure></p>
 <p>两层循环的列表生成式<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>([m + n <span class="keyword">for</span> m <span class="keyword">in</span> <span class="string">'ABC'</span> <span class="keyword">for</span> n <span class="keyword">in</span> <span class="string">'XYZ'</span>])</span><br><span class="line"><span class="comment">#['AX', 'AY', 'AZ', 'BX', 'BY', 'BZ', 'CX', 'CY', 'CZ']</span></span><br></pre></td></tr></table></figure></p>
 <p>内置函数range()可以生成一个有规律的数字序列，我们可以通过列表表达式很方便的生成一个列表（可以是数字列表，字符串列表等）。<br>Python最大的优势和特点就在于它的简洁性，能用最短的代码实现更多的功能。</p>
@@ -325,7 +327,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#列表生成式"><span class="toc-number">1.</span> <span class="toc-text">列表生成式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#切片"><span class="toc-number">2.</span> <span class="toc-text">切片</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#迭代器"><span class="toc-number">3.</span> <span class="toc-text">迭代器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#迭代器—判断一个对象是否可迭代"><span class="toc-number">3.1.</span> <span class="toc-text">迭代器—判断一个对象是否可迭代</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#迭代器—列表实现下标循环"><span class="toc-number">3.2.</span> <span class="toc-text">迭代器—列表实现下标循环</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#生成器"><span class="toc-number">3.3.</span> <span class="toc-text">生成器</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#迭代器，生成器，斐波那契额数列。"><span class="toc-number">1.</span> <span class="toc-text">迭代器，生成器，斐波那契额数列。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#列表生成式"><span class="toc-number">2.</span> <span class="toc-text">列表生成式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#切片"><span class="toc-number">3.</span> <span class="toc-text">切片</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#迭代器"><span class="toc-number">4.</span> <span class="toc-text">迭代器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#迭代器—判断一个对象是否可迭代"><span class="toc-number">4.1.</span> <span class="toc-text">迭代器—判断一个对象是否可迭代</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#迭代器—列表实现下标循环"><span class="toc-number">4.2.</span> <span class="toc-text">迭代器—列表实现下标循环</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#生成器"><span class="toc-number">4.3.</span> <span class="toc-text">生成器</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
