@@ -172,22 +172,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <a id="more"></a>
-<h2 id="一、自动转换"><a href="#一、自动转换" class="headerlink" title="一、自动转换"></a>一、自动转换</h2><p>自动转换不需要人工干预<br>自动类型转换多发生在运算或者判断过程中<br>转换时向着更加精确的类型转换</p>
-<h3 id="【1】整型"><a href="#【1】整型" class="headerlink" title="【1】整型"></a>【1】整型</h3><p>（1）布尔型True转换成数字1,False转换成数字0<br>（2）整型数据只有使用+ － * ** //运算符，才能继续保持为整型数（不和浮点运算）<br>（3）整型进行除法（/）运算，会自动转为浮点型</p>
-<h3 id="【2】浮点型"><a href="#【2】浮点型" class="headerlink" title="【2】浮点型"></a>【2】浮点型</h3><p>整型和浮点型进行运算获得的都是浮点型</p>
-<h3 id="【3】布尔值"><a href="#【3】布尔值" class="headerlink" title="【3】布尔值"></a>【3】布尔值</h3><p>（1）转为整数，True自动转为1，False转为0<br>（2）转为浮点数，True自动转为1.0，False转为0.0</p>
-<h3 id="【4】字符串"><a href="#【4】字符串" class="headerlink" title="【4】字符串"></a>【4】字符串</h3><p>（1）如果字符串中包含.或e或E，则转换成浮点型；否则转换成整型<br>（2）其他类型只要加上单引号（’）、双引号（“）、三引号（’’’）就可以转换为字符串类型</p>
-<h2 id="二、强制转换"><a href="#二、强制转换" class="headerlink" title="二、强制转换"></a>二、强制转换</h2><h3 id="【1】整型-1"><a href="#【1】整型-1" class="headerlink" title="【1】整型"></a>【1】整型</h3><p>（1）int()函数可以将浮点数转换为整数，返回其整数部分，舍弃其小数部分。<br>（2）整形字符串可以转换成整形，浮点数字符串不能转换成整形</p>
-<h3 id="【2】浮点型-1"><a href="#【2】浮点型-1" class="headerlink" title="【2】浮点型"></a>【2】浮点型</h3><p>（1）整形转换之后为浮点型，后面+.0<br>（2）浮点数不需要转换，转换之后保持原状<br>（3）布尔值转换 True转为1.0，False转为0.0<br>（4）字符串中纯整数和浮点数字符串可以转换，其他不能转换<br>（5）round()函数可以将小数部分四舍五入。<br>（6）将浮点数转换为最近邻的整数<br>运用ceil 、floor时，需引入math函数<br>（7）浮点数的小数表示可以使用float.as_integer_ratio()方法获取，比如，给定浮点数x=0.25，则调用float.as_integer_ratio(x)将返回(1,4) 。浮点数可以转换成元组<br>（8）使用float.hex()方法，可以将浮点数以十六进制形式表示为字符串，相反的转换可以使用float.fromhex()实现。</p>
-<h3 id="【3】复数"><a href="#【3】复数" class="headerlink" title="【3】复数"></a>【3】复数</h3><p>（1）整形转换之后变为（整数+0j）<br>（2）浮点型转换之后变成（浮点数+0j）<br>（3）布尔值转换之后 True-&gt;（1+0j）False-&gt;（0j）<br>（4）字符串，纯整型和浮点型都可以转换，其他不能转换</p>
-<h3 id="【4】布尔值"><a href="#【4】布尔值" class="headerlink" title="【4】布尔值"></a>【4】布尔值</h3><p>转为False的情况是有限的，除了False的情况，其他都为True。<br>元组（0）特殊，输出为false</p>
-<h3 id="【5】字符串"><a href="#【5】字符串" class="headerlink" title="【5】字符串"></a>【5】字符串</h3><p>（1）str(x)将对象 x 转换为字符串<br>（2）repr(x)将对象 x 转换为表达式字符串(原样输出)<br>（3）(+) 是字符串的连接符，(*) 是复制当前字符串，数字是复制的次数<br>eval用法，字符串转为其他类型<br>str=’pow(2,3)’<br>str=”[‘one’,’two’,’thr’]”<br>print(type(str))<br>newstr=eval(str)<br>print(type(newstr))</p>
-<p>###【6】列表<br>list(s) 将序列 s 转换为一个列表<br>注意：<br>    （1）数字类型不能转；字典，集合，元组，字符串，这四个是可以来回进行转换的。<br>    （2）字符串转换时每个字符变成列表中的一个值。<br>    （3）字典类型转换时，仅将字典的【键】转换为列表。</p>
-<p>###【7】元组<br>tuple（s）将序列 s 转换为一个元组</p>
-<p>###【8】集合<br>set（s）将s转为集合类型</p>
-<p>###【9】字典<br>dict（s）将s转为字典类型<br>单独一个数据是不能转为字典类型的<br>其他类型转为字典是需要按照指定的格式才可以转化</p>
-
+        <p>这就是一个简介<br>
+        
+          <a class="article-more-a" href="/2018/07/20/Python_03/#more">more >></a>
+        
       
 
       
